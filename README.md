@@ -128,6 +128,9 @@ python -m pytest -v
 
 The test suite covers tax calculations, validation scenarios, rebate handling, marginal relief, and tax rounding.
 
+## Dashboard Preview
+![alt text](dashboard.png)
+
 ## Launch the Dashboard
 
 Run the Streamlit application:
