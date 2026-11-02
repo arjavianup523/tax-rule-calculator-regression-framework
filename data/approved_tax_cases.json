@@ -1,0 +1,40 @@
+
+{
+  "baseline_version": "1.0",
+  "financial_year": "2025-26",
+  "assessment_year": "2026-27",
+  "cases": [
+    {
+      "case_id": "REG001",
+      "description": "New regime rebate threshold",
+      "gross_salary": 1275000,
+      "regime": "new_regime",
+      "expected_taxable_income": 1200000,
+      "expected_total_tax": 0
+    },
+    {
+      "case_id": "REG002",
+      "description": "New regime marginal relief",
+      "gross_salary": 1285000,
+      "regime": "new_regime",
+      "expected_taxable_income": 1210000,
+      "expected_total_tax": 10400
+    },
+    {
+      "case_id": "REG003",
+      "description": "Old regime rebate threshold",
+      "gross_salary": 550000,
+      "regime": "old_regime",
+      "expected_taxable_income": 500000,
+      "expected_total_tax": 0
+    },
+    {
+      "case_id": "REG004",
+      "description": "Old regime taxable income above rebate threshold",
+      "gross_salary": 1000000,
+      "regime": "old_regime",
+      "expected_taxable_income": 950000,
+      "expected_total_tax": 106600
+    }
+  ]
+}
