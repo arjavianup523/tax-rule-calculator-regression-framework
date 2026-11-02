@@ -1,13 +1,12 @@
-
 # Tax Rule Calculator & Regression Testing Framework
 
-A Python-based tax calculation and quality assurance framework designed to calculate Indian individual salary income tax, validate tax rules, detect calculation regressions, and maintain auditable test results.
+A Python-based tax calculation and quality assurance framework for Indian individual salary income tax. The project combines configurable tax rules, automated regression testing, validation workflows, audit logging, and reporting to help identify calculation defects before release.
 
 ## Project Overview
 
-This project demonstrates how financial calculations can be supported by automated testing, rule-driven configuration, regression validation, and audit-oriented reporting.
+This project demonstrates how financial calculations can be supported by software quality engineering practices, including rule-driven configuration, automated testing, regression validation, and audit-oriented reporting.
 
-It combines tax calculation logic with software quality engineering practices to help identify calculation defects before releasing updated tax rules.
+It is designed to simulate a controlled tax calculation and validation workflow rather than a comprehensive tax filing application.
 
 ## Key Features
 
@@ -40,7 +39,7 @@ It combines tax calculation logic with software quality engineering practices to
 ## Project Architecture
 
 ```text
-Tax_Rule_Calculator_Regression_Framework/
+tax-rule-calculator-regression-framework/
 │
 ├── config/
 │   └── tax_rules_fy2025_26.json
@@ -48,17 +47,17 @@ Tax_Rule_Calculator_Regression_Framework/
 ├── data/
 │   └── approved_tax_cases.json
 │
+├── docs/
+├── outputs/
 ├── src/
 │   └── tax_framework/
 │       └── services/
-│           ├── tax_calculator.py
-│           ├── full_tax_service.py
-│           ├── rule_loader.py
-│           └── test_full_tax_service.py
 │
+├── tests/
 ├── app.py
-├── README.md
-└── requirements.txt
+├── requirements.txt
+├── .gitignore
+└── README.md
 ```
 
 Additional modules support regression execution, audit logging, reporting, release validation, and defect tracking.
@@ -67,12 +66,12 @@ Additional modules support regression execution, audit logging, reporting, relea
 
 The current implementation covers:
 
-- Financial Year: 2025–26
-- Assessment Year: 2026–27
-- Country: India
-- Taxpayer: Resident individual below 60 years
-- Income source: Salary income
-- Tax regimes: Old and new
+- **Financial Year:** 2025–26
+- **Assessment Year:** 2026–27
+- **Country:** India
+- **Taxpayer:** Resident individual below 60 years
+- **Income source:** Salary income
+- **Tax regimes:** Old and new
 
 ### Supported Tax Rules
 
@@ -90,13 +89,13 @@ Tax rules are maintained separately in JSON configuration to support controlled 
 Clone the repository:
 
 ```bash
-git clone https://github.com/arjavianup523/Tax_Rule_Calculator_Regression_Framework.git
+git clone https://github.com/arjavianup523/tax-rule-calculator-regression-framework.git
 ```
 
 Navigate to the project directory:
 
 ```bash
-cd Tax_Rule_Calculator_Regression_Framework
+cd tax-rule-calculator-regression-framework
 ```
 
 Create a virtual environment:
@@ -125,9 +124,7 @@ Execute the complete test suite:
 python -m pytest -v
 ```
 
-The latest verified test run completed with:
-
-**61 tests passed**
+**Latest verified test result: 61 tests passed.**
 
 The test suite covers tax calculations, validation scenarios, rebate handling, marginal relief, and tax rounding.
 
@@ -166,3 +163,5 @@ Tax rules should be independently verified against applicable official legislati
 **Arjavi Shetye**
 
 GitHub: [arjavianup523](https://github.com/arjavianup523)
+
+[View the repository](https://github.com/arjavianup523/tax-rule-calculator-regression-framework)
